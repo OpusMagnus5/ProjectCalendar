@@ -1,0 +1,19 @@
+#logo {
+    display: inline-block;
+    margin: 15% 0;
+    width: 20%;
+}
+
+#logo img {
+     width: 100%;
+}
+
+#log-form {
+    display: inline-block;
+}
+
+#log-form form input{
+    display: block;
+    font-size: 20px;
+    margin: 5% 0;
+}

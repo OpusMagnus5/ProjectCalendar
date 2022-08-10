@@ -14,4 +14,9 @@ public class LoginController {
         model.addAttribute("user", new User());
         return "main.html";
     }
+
+    @RequestMapping(value = "", method = RequestMethod.GET)
+    public String main(){
+        return "redirect:/main";
+    }
 }
