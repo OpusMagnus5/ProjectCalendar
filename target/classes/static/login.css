@@ -16,6 +16,7 @@
 
 #log-form form input{
     display: block;
+    width: 55%;
     font-size: 20px;
     margin: 5% auto;
 }

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Rejestracja</title>
+    <link rel="stylesheet" href="/login.css">
+    <link rel="stylesheet" href="/register.css">
+</head>
+<body>
+    <div th:replace="fragments.html :: logo"></div>
+    <div id="register-form">
+        <form method="post">
+            <input type="text" placeholder="login" id="login" th:field="*{registerForm.login}">
+            <input type="password" placeholder="hasło" id="password" th:field="*{registerForm.password}">
+            <input type="password" placeholder="powtórz hasło" id="repeat-password" th:field="*{registerForm.repeatPassword}">
+            <input type="submit" value="Wyślij">
+        </form>
+    </div>
+</body>
+</html>

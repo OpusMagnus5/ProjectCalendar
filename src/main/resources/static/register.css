@@ -1,0 +1,12 @@
+#register-form {
+    display: block;
+    width: 25%;
+    margin: 1% auto;
+}
+
+#register-form form input {
+    display: block;
+    width: 55%;
+    font-size: 20px;
+    margin: 5% auto;
+}

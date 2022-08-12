@@ -9,14 +9,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class LoginController {
 
-    @RequestMapping(value = "/main", method = RequestMethod.GET)
-    public String main(Model model){
+    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    public String logIn(Model model){
         model.addAttribute("user", new User());
-        return "main.html";
+        return "login.html";
     }
 
     @RequestMapping(value = "", method = RequestMethod.GET)
-    public String main(){
-        return "redirect:/main";
+    public String logIn(){
+        return "redirect:/login";
     }
 }

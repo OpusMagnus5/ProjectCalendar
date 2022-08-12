@@ -1,8 +1,14 @@
 package com.damian.bodzioch.project.calendar.model;
 
+import javax.persistence.*;
+
+@Entity(name = "tuser")
 public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;
     String login;
+    @Column(length = 32)
     String password;
 
     public User(int id, String login, String password) {
