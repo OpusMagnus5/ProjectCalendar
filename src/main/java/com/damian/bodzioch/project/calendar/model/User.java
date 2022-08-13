@@ -3,10 +3,11 @@ package com.damian.bodzioch.project.calendar.model;
 import javax.persistence.*;
 
 @Entity(name = "tuser")
-public class User {
+public class User implements HibernateEtities{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;
+    @Column(unique = true)
     String login;
     @Column(length = 32)
     String password;
