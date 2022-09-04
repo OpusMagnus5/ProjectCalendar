@@ -18,6 +18,7 @@ public class RegistrationService implements IRegistrationService {
     @Autowired
     IUserDAO userDAO;
 
+    //TODO zmienic na regex
     public void formValidation(RegisterForm registerForm){
         if (registerForm.getLogin().length() < 6){
             throw new LoginTooShort();

@@ -6,11 +6,11 @@ import javax.persistence.*;
 public class User implements HibernateEtities{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int id;
+    private int id;
     @Column(unique = true)
-    String login;
+    private String login;
     @Column(length = 32)
-    String password;
+    private String password;
 
     public User(int id, String login, String password) {
         this.id = id;
