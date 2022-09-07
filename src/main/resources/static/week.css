@@ -1,0 +1,74 @@
+#heading {
+    display: block;
+    position: relative;
+}
+
+#logo {
+    display: inline-block;
+    width: 7%;
+    margin-left: 3%;
+}
+
+#websiteName {
+    display: inline-block;
+    position: absolute;
+    top: 33%;
+    font-size: 25px;
+    left: 12%
+}
+
+#todayButton {
+    display: inline-block;
+    position: absolute;
+    top: 38%;
+    left: 29%;
+    font-size: 20px;
+}
+
+#previous {
+    display: inline-block;
+    position: absolute;
+    top: 39%;
+    left: 38%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#next {
+    display: inline-block;
+    position: absolute;
+    top: 39%;
+    left: 44%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#dateForm {
+    display: inline-block;
+}
+
+#months {
+    display: inline-block;
+    position: absolute;
+    top: 39%;
+    left: 49%;
+    font-size: 18px;
+}
+
+#year {
+    display: inline-block;
+    position: absolute;
+    left: 62%;
+    font-size: 15px;
+    width: 8%;
+    top: 39%;
+}
+
+#okButton {
+    display: inline-block;
+    position: absolute;
+    left: 72%;
+    font-size: 15px;
+    width: 4%;
+    top: 39%;
+}
