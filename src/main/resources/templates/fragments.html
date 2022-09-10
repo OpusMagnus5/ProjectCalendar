@@ -11,7 +11,20 @@
         </a>
     </div>
     <div id="heading" th:fragment="heading">
-
+        <img id="small-logo" src="/logo.png">
+        <a id="websiteName">Kalendarz</a>
+        <a id="todayButton" class="button">Dzisiaj</a>
+        <a id="previous" class="button"><</a>
+        <a id="next" class="button">></a>
+        <div id="dateForm">
+            <form method="post">
+                <select id="months">
+                    <option th:each="month : ${months}" th:value="${month.id}" th:text="${month.name}"></option>
+                </select>
+                <input id="year" type="number" placeholder="rok">
+                <input id="okButton" type="submit" value="OK">
+            </form>
+        </div>
     </div>
 </body>
 </html>
