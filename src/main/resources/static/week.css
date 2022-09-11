@@ -53,6 +53,7 @@ todayButton:hover{
     left: 27%;
     font-size: 20px;
     font-weight: bold;
+    border-radius: 100%
 }
 
 #next {
@@ -61,6 +62,7 @@ todayButton:hover{
     left: 30%;
     font-size: 20px;
     font-weight: bold;
+    border-radius: 100%
 }
 
 #dateForm {
@@ -86,6 +88,13 @@ todayButton:hover{
     font-size: 16px;
 }
 
-table, th {
-  border:1px solid black;
+#table table{
+    border: 1px solid black;
+    width: 100%;
+    margin-top: 2px;
+    table-layout: fixed;
+}
+
+#table {
+    width: 75%;
 }

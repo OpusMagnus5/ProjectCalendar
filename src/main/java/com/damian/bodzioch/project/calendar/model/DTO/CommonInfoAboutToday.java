@@ -1,5 +1,7 @@
 package com.damian.bodzioch.project.calendar.model.DTO;
 
+import com.damian.bodzioch.project.calendar.model.DaysOfWeek;
+
 import java.time.LocalDate;
 import java.time.temporal.ChronoField;
 
@@ -8,7 +10,7 @@ public class CommonInfoAboutToday {
     private final int dayOfTheMonth;
     private final int numberOfMonth;
     private final int longOfTheMonth;
-    private int[] numbersOfDaysInWeek = new int[7];
+    private final NumbersAndNameDaysInWeek[] numbersAndNameDaysInWeeks = new NumbersAndNameDaysInWeek[7];
 
     public CommonInfoAboutToday() {
         this.dayOfTheMonth = LocalDate.now().getDayOfMonth();
@@ -16,7 +18,8 @@ public class CommonInfoAboutToday {
         this.numberOfMonth = LocalDate.now().getMonthValue();
         this.longOfTheMonth = LocalDate.now().lengthOfMonth();
         for (int i = 0; i < 7; i++) {
-            this.numbersOfDaysInWeek[i] = this.dayOfTheMonth - this.dayOfTheWeek + 1 + i;
+            this.numbersAndNameDaysInWeeks[i] =
+                    new NumbersAndNameDaysInWeek(this.dayOfTheMonth - this.dayOfTheWeek + 1 + i, DaysOfWeek.values()[i]);
         }
     }
 
@@ -36,7 +39,7 @@ public class CommonInfoAboutToday {
         return longOfTheMonth;
     }
 
-    public int[] getNumbersOfDaysInWeek() {
-        return numbersOfDaysInWeek;
+    public NumbersAndNameDaysInWeek[] getNumbersAndNameDaysInWeeks() {
+        return numbersAndNameDaysInWeeks;
     }
 }

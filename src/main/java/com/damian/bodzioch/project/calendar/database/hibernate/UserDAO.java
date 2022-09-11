@@ -12,7 +12,7 @@ import javax.persistence.NoResultException;
 import java.util.Optional;
 
 @Repository
-public class UserDAO implements IUserDAO {
+public class UserDAO implements IUserDAO{
 
     @Autowired
     ReadyQueries readyQueries;

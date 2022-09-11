@@ -7,12 +7,15 @@
 </head>
 <body>
     <div th:replace="fragments.html :: heading"></div>
-    <table id="week">
+    <div id="table">
+    <table>
         <tr>
-            <th th:each="number : ${commonInfoAboutToday.numbersOfDaysInWeek}">
-                <a th:text="${number}"></a>
+            <th th:each="element : ${commonInfoAboutToday.numbersAndNameDaysInWeeks}">
+                <a th:text="${element.name.shortcut}"></a>
+                <a th:text="${element.number}"></a>
             </th>
         </tr>
     </table>
+    </div>
 </body>
 </html>
