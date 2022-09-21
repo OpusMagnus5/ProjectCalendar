@@ -12,8 +12,9 @@
         <property name="hibernate.connection.password"/>
 
         <property name="hibernate.show_sql">true</property>
-        <property name="hibernate.hbm2ddl.auto">none</property>
+        <property name="hibernate.hbm2ddl.auto">create</property>
 
         <mapping class="com.damian.bodzioch.project.calendar.model.User"/>
+        <mapping class="com.damian.bodzioch.project.calendar.model.Event"/>
     </session-factory>
 </hibernate-configuration>

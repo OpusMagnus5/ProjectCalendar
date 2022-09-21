@@ -15,5 +15,6 @@
         <property name="hibernate.hbm2ddl.auto">none</property>
 
         <mapping class="com.damian.bodzioch.project.calendar.model.User"/>
+        <mapping class="com.damian.bodzioch.project.calendar.model.Event"/>
     </session-factory>
 </hibernate-configuration>
